@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badass Burgers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6cded4324.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- MENU OPACITY LAYER -->
+    <div id="menuOpacityLayer" class="hide"></div>
+    <div id="menuOpacityLayer2" class="hide"></div>
+    <header>
+        <!-- NAVBAR -->
+        <nav id="siteNav">
+            <div id="navContainer">
+                <p id="siteNavLogo">BADASS<br>BURGERS</p>
+                <div id="siteNavLinksContainer">
+                    <ul id="siteNavLinks">
+                        <li><a class="siteNavLink decorationOn" href="#showcase">HEM</a></li>
+                        <li><a class="siteNavLink" href="#about">OM OSS</a></li>
+                        <li><a class="siteNavLink" href="#showcase">MENY</a></li>
+                        <li><a class="siteNavLink" href="#contact">KONTAKT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- SHOWCASE/HERO -->
+        <section id="showcase">
+            <div id="jumbo">
+                <h1>WE'VE GOT THEM DRINKS.
+                    WE'VE GOT THEM FRIES.
+                    WE'VE GOT THEM DELICIOUS,<br><span id="jumboLogo">BADASS<br>BURGERS</span></h1>
+                <a id="bookingButton">BOKA BORD</a>
+            </div>
+        </section>
+        <!-- BOOKING -->
+        <section id="booking">
+            <div id="bookingModal" class="hide">
+                <i id="bookingClose" class="fas fa-times"></i>
+                <div id="bookingModalContainer">
+                    <form id="bookingForm" action="booking.php">
+                        <h2>BOKA BORD</h2>
+                        <br>
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" name="name">
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                        <br>
+                        <label for="date">Datum</label>
+                        <input type="date" id="date" name="date">
+                        <br>
+                        <label for="time">Tid</label>
+                        <input type="time" id="time" name="time">
+                        <br>
+                        <label for="people">Antal personer:</label>
+                        <select id="people" name="people">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="10">11</option>
+                            <option value="10">12</option>
+                        </select>
+                        <br>
+                        <input type="submit" id="submit" value="SKICKA" name="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT -->
+        <section id="about">
+            <div id="aboutUs" class="aboutSection">
+                <div id="aboutUsContainer1" class="aboutContainer">
+                    <h2 class="aboutH2">Burgare, craftbeers och livemusik.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, sunt? Doloremque molestiae, placeat labore minus commodi ipsa iure repellendus minima consequuntur at, pariatur, vero consequatur veritatis aliquam sint aperiam dicta tenetur tempore impedit dolor unde sed in incidunt. Voluptas, quas.<br><br>Välkomna!<br>- Badass Burgers.</p>
+                    <div class="aboutImgGrid"><img src="./burg.jfif" alt=""><img src="./mic.jfif" alt=""></div>
+                </div>
+            </div>
+            <div id="aboutFood" class="aboutSection">
+                <div id="aboutFoodContainer1" class="aboutContainer">
+                    <h2 class="aboutH2">Kärlek, kvalite och öppen eld.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis aperiam quidem voluptatem fugit eos culpa molestias doloribus architecto in, error esse minima. Aut asperiores aspernatur officia nihil et nostrum omnis quod repudiandae pariatur expedita quos harum rerum culpa recusandae exercitationem, eum tempora quas quia deserunt animi atque unde doloribus!</p>
+                </div>
+            </div>
+            <div id="aboutBeer" class="aboutSection">
+                <div id="aboutBeerContainer1" class="aboutContainer">
+                    <h2 class="aboutH2">Alltid ny och spännande öl.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa minus doloremque nisi dicta eaque tempora enim corporis consequuntur non, voluptates fugit tempore ad illum qui doloribus odit id beatae laboriosam.</p>
+                    <div class="aboutImgGrid">
+                        <img src="./Beer/Untitled.jpg" alt="">
+                        <img src="./Beer/photo-1513189737554-b1bbd839b9a3.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="aboutMusic" class="aboutSection">
+                <div id="aboutMusicContainer1" class="aboutContainer">
+                    <h2 class="aboutH2">Rock, jazz eller elektroniskt?</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam magnam accusantium quisquam corporis voluptatum possimus optio et itaque corrupti facere fuga adipisci odio commodi quasi dignissimos praesentium, harum ab iusto! Amet exercitationem doloremque ad in sapiente, nihil rem veniam atque tempore corrupti quia asperiores, debitis fugiat magni non repudiandae!</p>
+                </div>
+            </div>
+        </section>
+        <!-- MENU -->
+        <section id ="menu">
+                <div id="menuModal" class="hide slide-in-fwd-center">
+                    <div id="menuModalContainer">
+                        <nav id="menuNav">
+                            <div id="logoCloseContainer"><h2 id="menuLogo">MENY</h1>
+                            <i id="menuClose" class="fas fa-window-close"></i></div>
+                            <ul id="menuNavLinks">
+                                <li><a class="menuNavLink decorationOn">BURGARE</a></li>
+                                <li><a class="menuNavLink">SIDES</a></li>
+                                <li><a class="menuNavLink">DRYCK</a></li>
+                            </ul>
+                        </nav>
+                        <div id="menuBurgers" class="menuContainer slit-in-vertical">
+                            <div id="burgersGrid1" class="menuGrid">
+                                <h3>THE BADASS</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="burgersGrid2" class="menuGrid">
+                                <h3>THE CLASSIC</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="burgersGrid3" class="menuGrid">
+                                <h3>THE FIREBALL</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="burgersGrid4" class="menuGrid">
+                                <h3>TRIPLE X</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                        </div>
+                        <div id="menuDrinks" class="menuContainer hide slit-in-vertical">
+                            <div id="sidesGrid1" class="menuGrid">
+                                <h3>MILKSHAKE</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="sidesGrid2" class="menuGrid">
+                                <h3>CRAFTBEER</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="sidesGrid3" class="menuGrid">
+                                <h3>ALKOHOLFRITT</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="sidesGrid4" class="menuGrid">
+                            </div>
+                        </div>
+                        <div id="menuSides" class="menuContainer hide slit-in-vertical">
+                            <div id="sidesGrid1" class="menuGrid">
+                                <h3>POMMES FRITTES</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="sidesGrid2" class="menuGrid">
+                                <h3>LÖK RINGAR</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="sidesGrid3" class="menuGrid">
+                                <h3>CHILI CHEESE BITES</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                            <div id="sidesGrid4" class="menuGrid">
+                                <h3>DIPSÅS</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio eaque quo, error ad impedit omnis, enim fugiat atque reprehenderit eius voluptas animi delectus, placeat quas facere a. Mollitia repellendus quasi quos laudantium inventore, dicta laboriosam possimus est reprehenderit porro earum!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact">
+            <div id="contactContainer">
+                <div id= "gridA" class="contactGrid"><p id="siteContactLogo">BADASS<br>BURGERS</p></div>
+                <div id="gridD" class="contactGrid">
+                    Öppettider:<br>
+                    <span>Vardagar</span> <span>11 - 22</span><br>
+                    <span>Lördag</span> <span>11 - 01</span><br>
+                    <span>Lunch</span> <span>11 - 13</span>
+                </div>
+                <div id= "gridB" class="contactGrid">
+                    <p>Badass Burgers AB
+                        <br>
+                        Saluvägen 14
+                        <br>
+                        123 45 Stockholm
+                        <br>
+                        <br>
+                        Org. nr: 446925-6223
+                        </p>
+                </div>
+                <div id= "gridC" class="contactGrid">
+                    <p>
+                        Kontakta oss på<br>
+                        <a href="javacript">info@badassburgers.se</a><br><br>
+                        Vill du jobba hos oss?<br>
+                        <a href="">jobb@badassburgers.se</a><br><br><br>
+                        <i class="fab fa-facebook-square contactIcon"></i>
+                        <i class="fab fa-instagram-square contactIcon"></i>
+                        <i class="fab fa-twitter-square contactIcon"></i>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>   
+</body>
+<script src="scripts.js"></script>
+</html>
